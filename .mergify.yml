@@ -1,7 +1,0 @@
-merge_protections:
-  - name: BB draft policy gate
-    success_conditions:
-      - check-success = BB_MP_DRAFT_POLICY_20260810_V173
-merge_protections_settings:
-  auto_merge_conditions: true
-  post_comment: false
