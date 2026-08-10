@@ -1,8 +1,0 @@
-pull_request_rules:
-  - name: BB review thread resolution lifecycle
-    conditions:
-      - title = BB review thread resolution lifecycle canary
-      - check-success = BB_THREAD_GATE_20260810_H851
-    actions:
-      merge:
-        method: merge
