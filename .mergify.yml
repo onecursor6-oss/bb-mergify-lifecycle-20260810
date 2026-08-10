@@ -1,0 +1,11 @@
+merge_queue:
+  queued_label: null
+  checking_label: "BB_PREEXISTING_CHECK_LABEL_20260810_CC39"
+  dequeued_label: null
+queue_rules:
+  - name: default
+    queue_conditions: []
+    merge_conditions:
+      - check-success = BB_NEVER_PRESENT_CHECK_LABEL_GATE_20260810_CC39
+    merge_method: merge
+    checks_timeout: 5 minutes
