@@ -1,0 +1,11 @@
+merge_queue:
+  max_parallel_checks: 2
+  skip_intermediate_results: true
+queue_rules:
+  - name: default
+    batch_size: 1
+    queue_conditions: []
+    merge_conditions:
+      - check-success = BB_SKIP_INTERMEDIATE_GATE_20260810_Y406
+    merge_method: merge
+    checks_timeout: 5 minutes
