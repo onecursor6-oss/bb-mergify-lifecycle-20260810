@@ -1,8 +1,0 @@
-pull_request_rules:
-  - name: BB stale valid policy
-    conditions:
-      - title = BB invalid config stale policy canary
-      - check-success = BB_INVALID_CONFIG_STALE_GATE_20260810_HH05
-    actions:
-      merge:
-        method: merge
