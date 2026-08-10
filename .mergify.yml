@@ -1,0 +1,10 @@
+merge_queue:
+  max_parallel_checks: 2
+  status_comments: outcomes
+queue_rules:
+  - name: default
+    queue_conditions: []
+    merge_conditions:
+      - check-success = BB_DEQUEUE_POSTCHECK_GATE_20260810_DD50
+    merge_method: merge
+    checks_timeout: 5 minutes
