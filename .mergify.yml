@@ -1,0 +1,7 @@
+merge_protections:
+  - name: BB source-head policy gate
+    success_conditions:
+      - check-success = BB_MP_POLICY_GATE_20260810_T951
+merge_protections_settings:
+  auto_merge_conditions: true
+  post_comment: false
